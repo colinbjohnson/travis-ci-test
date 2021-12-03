@@ -1,3 +1,10 @@
 language: minimal
 script:
-  - echo "TRAVIS_TAG is ${TRAVIS_TAG}"
+  - echo "Called Script"
+deploy:
+  - provider: script
+    # edge: true in order to use the conditional deployment feature "on"
+    edge: true
+    script: ./push_to_ecr.sh
+    on:
+      tags: true 
