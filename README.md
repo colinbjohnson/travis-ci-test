@@ -11,7 +11,7 @@ Travis configuration is stored in a file called `.travis.yml`.
 
 ## Understanding the `TRAVIS_TAG`
 
-1. create a "Tag" in the Github User Interface: should return `TAG=tag_from_github`
+1. create a "Tag" in the Github User Interface: should return `TAG=$tag_from_github`
 2. push commit to master `TAG=""`
 3. push branch in github `TAG=""`
 
